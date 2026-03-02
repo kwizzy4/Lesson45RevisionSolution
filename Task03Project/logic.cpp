@@ -7,7 +7,7 @@
 
 #include "logic.h"
 bool is_the_same_elements(int array[DEFAULT_SIZE], int size) {
-	if (size <= 0 || size < 2) return false;
+	if (size < 2) return false;
 
 	for (int i = 0; i < size - 1; i++) {
 		for (int j = i + 1; j < size; j++) {
